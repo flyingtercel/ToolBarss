@@ -1,0 +1,26 @@
+<resources>
+    <style name="AppTheme" parent="AppTheme.Base">
+
+    </style>
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
+        <!--设置Action Bar不显示-->
+        <item name="windowActionBar">false</item>
+        <!--设置标题栏不显示   5.0以上用-->
+        <item name="windowNoTitle">true</item>
+        <!--设置标题栏不显示   5.0以下用-->
+        <item name="android:windowNoTitle">true</item>
+        <!--如果使用 api lever 22则拿掉前缀-->
+
+        <!--ActionBar的底色，如果App继续使用ActionBar,则直接在Theme主题中设置如果在ToolBar中使用的话，则需要给Toolbar设置Background背景颜色即可-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--状态栏底色，显示电量那一行的底色-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--控件选中之后的颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--Window背景颜色-->
+        <item name="android:windowBackground">@color/windowBackg</item>
+        <!--ActionBar上Title的颜色-->
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+    </style>
+
+</resources>
