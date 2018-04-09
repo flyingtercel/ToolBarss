@@ -1,7 +1,7 @@
 # ActionBar
 ToolBar学习
 # 自定义颜色
-![自定义颜色](https://github.com/flyingtercel/ToolBarss/blob/master/app/src/main/res/mipmap-hdpi/style.png)
+![自定义颜色](https://github.com/flyingtercel/ToolBarss/blob/master/app/src/main/res/mipmap-xxhdpi/img01.png)
 ```
 <style name="AppTheme" parent="AppTheme.Base">
         <!--状态栏颜色-->
