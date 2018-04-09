@@ -1,7 +1,7 @@
 # ActionBar
 ToolBar学习
 # 自定义颜色
-![自定义颜色](https://github.com/flyingtercel/ActionBar/blob/master/app/src/main/res/mipmap-hdpi/style.png)
+![自定义颜色](https://github.com/flyingtercel/ToolBarss/tree/master/app/src/main/res/mipmap-hdpi/style.png)
 ```
 <style name="AppTheme" parent="AppTheme.Base">
         <!--状态栏颜色-->
@@ -21,7 +21,7 @@ ToolBar学习
 </style>
 ```
 ToolBar中添加文本图标如下图
-![ToolBar样式](https://github.com/flyingtercel/ActionBar/blob/master/app/src/main/res/mipmap-hdpi/toolbar.png)
+![ToolBar样式](https://github.com/flyingtercel/ToolBarss/tree/master/app/src/main/res/mipmap-hdpi/.png)
 ```
 public class MainActivity extends AppCompatActivity {
 
