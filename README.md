@@ -72,3 +72,53 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 ```
+###沉浸式状态栏设置
+注意！沉浸式状态栏只支持安卓4.4及以上的版本
+状态栏：4.4上是渐变色，5.0上是完全透明，运行结果图
+![运行效果图](https://github.com/flyingtercel/ToolBarss/blob/master/toolbarstatusbar/src/main/res/drawable/ss12.png)
+![图片状态栏](https://github.com/flyingtercel/ToolBarss/blob/master/toolbarstatusbar/src/main/res/drawable/ss11.png)
+![纯色状态栏](https://github.com/flyingtercel/ToolBarss/blob/master/toolbarstatusbar/src/main/res/drawable/ss22.png)
+第一、首先在values、values-v19、values-v21文件夹下的styles.xml都设置一个 Translucent System Bar 风格的Theme，
+values/style.xml：
+```
+<style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!--在Android 4.4之前的版本上运行，直接跟随系统主题-->
+</style>
+<style name="TranslucentTheme" parent="BaseTheme">
+    <!--在Android 4.4之前的版本上运行，直接跟随系统主题-->
+</style>
+```
+values-v19/style.xml：
+```
+<style name="TranslucentTheme" parent="BaseTheme">
+    <item name="android:windowTranslucentStatus">true</item>
+    <item name="android:windowTranslucentNavigation">true</item>
+</style>
+```
+values-v21/style.xml：
+```
+<style name="TranslucentTheme" parent="BaseTheme">
+    <item name="android:windowTranslucentStatus">false</item>
+    <item name="android:windowTranslucentNavigation">true</item>
+    <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+    <item name="android:statusBarColor">@android:color/transparent</item>
+</style>
+```
+第二、在清单文件中配置需要沉浸式状态栏的activity加入theme
+```
+<activity android:name=".ImageActivity" android:theme="@style/TranslucentTheme" />
+<activity android:name=".ColorActivity" android:theme="@style/TranslucentTheme" />
+```
+第三、在Activity的布局文件中的跟布局加入“android:fitsSystemWindows=”true””，但是，这里需要区分一下，就是背景是图片还是纯色：
+
+1.当背景为图片时，布局可以这么写：
+```
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imgs_bj"
+    android:fitsSystemWindows="true">
+
+</RelativeLayout>
+```
