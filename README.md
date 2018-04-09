@@ -75,9 +75,9 @@ public class MainActivity extends AppCompatActivity {
 ###沉浸式状态栏设置
 注意！沉浸式状态栏只支持安卓4.4及以上的版本
 状态栏：4.4上是渐变色，5.0上是完全透明，运行结果图
-![运行效果图](https://github.com/flyingtercel/ToolBarss/blob/master/toolbarstatusbar/src/main/res/drawable/ss12.png)
-![图片状态栏](https://github.com/flyingtercel/ToolBarss/blob/master/toolbarstatusbar/src/main/res/drawable/ss11.png)
-![纯色状态栏](https://github.com/flyingtercel/ToolBarss/blob/master/toolbarstatusbar/src/main/res/drawable/ss22.png)
+![运行效果图](https://github.com/flyingtercel/ToolBarss/blob/master/toolbarstatusbar/src/main/res/drawable/ss12.png)   </br>
+![图片状态栏](https://github.com/flyingtercel/ToolBarss/blob/master/toolbarstatusbar/src/main/res/drawable/ss11.png)   </br>
+![纯色状态栏](https://github.com/flyingtercel/ToolBarss/blob/master/toolbarstatusbar/src/main/res/drawable/ss22.png)   </br>
 第一、首先在values、values-v19、values-v21文件夹下的styles.xml都设置一个 Translucent System Bar 风格的Theme，
 values/style.xml：
 ```
