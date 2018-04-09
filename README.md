@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 ```
-###沉浸式状态栏设置
+### 沉浸式状态栏设置
 注意！沉浸式状态栏只支持安卓4.4及以上的版本
 状态栏：4.4上是渐变色，5.0上是完全透明，运行结果图
 ![运行效果图](https://github.com/flyingtercel/ToolBarss/blob/master/toolbarstatusbar/src/main/res/drawable/ss12.png)   </br>
